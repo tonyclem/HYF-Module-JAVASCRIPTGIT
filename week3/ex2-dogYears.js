@@ -1,19 +1,8 @@
 "use strict";
 
-function calculateDogAge(fictional) {
-  let ages = 7;
-  let agesB = 14;
-  let agesC = 21;
-  // TODO complete this function
-  if (ages === 7) {
-    return `Your doggie is ${ages} years old in dog years!`;
-  }
-  if (agesB === 14) {
-    return `Your doggie is ${agesB} years old in dog years!`;
-  }
-  if (agesC === 21) {
-    return `Your doggie is ${agesC} years old in dog years!`;
-  }
+function calculateDogAge(age) {
+  const dogAge = 7;
+  return `Your doggie is ${age * dogAge} years old in dog years!`;
 }
 
 function main() {
