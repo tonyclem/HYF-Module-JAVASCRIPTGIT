@@ -17,17 +17,17 @@ function calculateTotalPrice(myObject) {
   return `Total: €${total}`;
 }
 
-calculateTotalPrice(cartForParty);
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log("\nTest 1: calculateTotalPrice should take one parameter");
   // TODO replace this comment with your code
+  console.log(calculateTotalPrice(cartForParty));
 }
 
 function test2() {
   console.log("\nTest 2: return correct output when passed cartForParty");
   // TODO replace this comment with your code
-  calculateTotalPrice(cartForParty);
+  console.log(calculateTotalPrice(cartForParty));
 }
 
 function test() {
