@@ -1,6 +1,6 @@
 "use strict";
 
-const shoppingCart = ["bananas", " milk"];
+const shoppingCart = ["bananas", "milk"];
 
 // ! Function to be tested
 function addToShoppingCart(grocery) {
@@ -10,10 +10,10 @@ function addToShoppingCart(grocery) {
   }
   if (shoppingCart.length >= 3) {
     shoppingCart.shift();
-    shoppingCart.push(grocery);
   }
   shoppingCart.push(grocery);
-  return `You bought ${shoppingCart}!`;
+  const mySpring = shoppingCart.join(", ");
+  return `You bought ${mySpring}!`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -36,7 +36,7 @@ function test2() {
 function test3() {
   console.log("Test 3: `chocolate` should be added");
   const expected = "You bought bananas, milk, chocolate!";
-  const actual = addToShoppingCart(" chocolate");
+  const actual = addToShoppingCart("chocolate");
   console.assert(actual === expected);
 }
 

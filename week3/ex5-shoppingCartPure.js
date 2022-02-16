@@ -19,11 +19,13 @@ function addToShoppingCart(shoppingCart, groceryItems) {
   const newShoppingArr = ["bananas", "milk", "Chocholate"];
 
   if (newShoppingArr.length >= 3) {
-    newShoppingArr.pop().split(" ");
+    newShoppingArr.pop().split(", ");
     newShoppingArr.push(groceryItems);
-    return `You bought ${newShoppingArr}!`;
+    return `You bought ${newShoppingArr.join(", ")}!`;
   }
-  return `You bought ${newShoppingArr}!`;
+  newShoppingArr.push(grocery);
+  const mySpring = newShoppingArr.join(", ");
+  return `You bought ${mySpring}!`;
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -46,7 +48,6 @@ function test3() {
   console.log("Test 3: `chocolate` should be added");
   const initialCart = ["bananas", "milk"];
   const result = addToShoppingCart(initialCart, "chocolate");
-  console.log(`Actual: ${result} && Expected: You bought ${initialCart}`);
   console.assert(result.length === 3);
   console.assert(result.includes("chocolate"));
 }
@@ -56,7 +57,6 @@ function test4() {
   const initialCart = ["bananas", "milk", "chocolate"];
   const result = addToShoppingCart(initialCart, "waffles");
   console.assert(result.length === 3);
-  console.log(`Actual: ${result} && Expected:`);
   console.assert(result.includes("waffles"));
 }
 
