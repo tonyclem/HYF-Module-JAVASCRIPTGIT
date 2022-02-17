@@ -18,7 +18,6 @@ const employeeRecords = [
 ];
 // ! Function under test
 function filterPrivateData(employeeRecords) {
-  // TODO complete this function
   const [{ name, occupation, email }] = employeeRecords;
   return employeeRecords;
 }

@@ -14,31 +14,13 @@ function tellFortune(numKids, partnerNames, locations, jobTitles) {
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-    2, 1, 3, 4, 5,
-  ];
+  const numKids = [2, 1, 3, 4, 5];
 
-  const partnerNames = [
-    // TODO add elements here
-    "Alisha",
-    "Ahana",
-    "Eva",
-    "Sara",
-    "Pari",
-  ];
+  const partnerNames = ["Alisha", "Ahana", "Eva", "Sara", "Pari"];
 
-  const locations = [
-    // TODO add elements here
-    "Roermond",
-    "Eindhoven",
-    "Utrecht",
-    "Amsterdam",
-    "Weert",
-  ];
+  const locations = ["Roermond", "Eindhoven", "Utrecht", "Amsterdam", "Weert"];
 
   const jobTitles = [
-    // TODO add elements here
     "Web Developer",
     "Computer Scientist",
     "Web Desiger",

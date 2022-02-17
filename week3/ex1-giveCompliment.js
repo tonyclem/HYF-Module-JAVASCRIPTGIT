@@ -1,8 +1,6 @@
 "use strict";
 
-function giveCompliment(name) {
-  const myName = "Clement";
-  // TODO complete this function
+function giveCompliment(myName) {
   const compliments = [
     "Courageous",
     "Great",
@@ -21,7 +19,6 @@ function giveCompliment(name) {
 }
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
   const myName = "Clement";
   console.log(myName);
   console.log(giveCompliment(myName));
